@@ -390,7 +390,22 @@ public class AltaEmpleado extends javax.swing.JFrame {
         Empleado emp= new Empleado();
         emp.setNombre(this.jTextField1.getText());
         emp.setApPaterno(this.jTextField2.getText());
-        emp.setApMaterno(jTextField)
+        emp.setApMaterno(jTextField3.getText());
+        emp.setEdad(Integer.paraseInt(jTextField4.getText() ) );
+        emp.setCurp(jTextField5.getText());
+        emp.setDomicilio(new Direccion());
+        emp.setDomicilio().setCalle(this.jTextField6.getText());
+        emp.setDomicilio().setNumero(this.jTextField7.getText());
+        emp.setDomicilio().setColonia(this.jTextField8.getText());
+        emp.setDomicilio().setDelegacion(this.jTextField9.getText());
+        emp.setDomicilio().setEstado(this.jTextField10.getText());
+        emp.setNumeroEmpleado(Integer.paraseInt(this.jTextField11.getText()));
+        emp.setDepartamento(this.jTextField12.getText());
+        emp.setSueldo(Float.parseFloat(this.jTextField13.getTex()));
+        emp.setHorasExtra(Integer.parseInt(this.jTextField14.getText()));
+        int confirmar= JOptionPane.showConfirmDialog(this,"¿Deseas guardar estos datos?");
+        
+        
     }//GEN-LAST:event_jButton5MouseClicked
 
     private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
@@ -410,8 +425,7 @@ public class AltaEmpleado extends javax.swing.JFrame {
       this.jTextField10.setText("");
       this.jTextField10.setColumns(10);
       this.jTextField11.setText("");
-      this.jTextField11.
-    this.jTextField11.setColumns(10);
+      this.jTextField11.setColumns(10);
       this.jTextField12.setText("");
       this.jTextField13.setText("");
       this.jTextField14.setText("");

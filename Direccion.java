@@ -19,7 +19,7 @@ public class Direccion {
 
     public Direccion() {
     }
-
+    
     public Direccion(String calle, String numero, String colonia, String delegacion, String estado, String cp) {
         this.calle = calle;
         this.numero = numero;

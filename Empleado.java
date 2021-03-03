@@ -88,7 +88,6 @@ public class Empleado extends Persona{
         
         return sueldoTotal;
         
-    
 
 
 
